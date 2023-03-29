@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class NavigationRailPage extends StatefulWidget {
-  const NavigationRailPage({Key? key}) : super(key: key);
+class LandingHome extends StatefulWidget {
+  const LandingHome({Key? key}) : super(key: key);
 
   @override
-  State<NavigationRailPage> createState() => _NavigationRailPageState();
+  State<LandingHome> createState() => _LandingHomeState();
 }
 
 const _navBarItems = [
@@ -16,16 +16,16 @@ const _navBarItems = [
   BottomNavigationBarItem(
     icon: Icon(Icons.bookmark_border_outlined),
     activeIcon: Icon(Icons.bookmark_rounded),
-    label: 'Bookmarks',
+    label: 'Community',
   ),
   BottomNavigationBarItem(
     icon: Icon(Icons.person_outline_rounded),
     activeIcon: Icon(Icons.person_rounded),
-    label: 'Profile',
+    label: 'Self Prep',
   ),
 ];
 
-class _NavigationRailPageState extends State<NavigationRailPage> {
+class _LandingHomeState extends State<LandingHome> {
   int _selectedIndex = 0;
 
   @override

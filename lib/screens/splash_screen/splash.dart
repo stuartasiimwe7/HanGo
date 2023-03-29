@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:hango/screens/landing_home.dart';
-
+import 'package:page_transition/page_transition.dart';
 import 'package:hango/screens/splash_screen/image_position.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -71,7 +71,7 @@ class _SplashScreenState extends State<SplashScreen>
               Navigator.pushReplacement(
                   context,
                   PageTransition(
-                      child: const LoginScreen(),
+                      child: const LandingHome(),
                       type: PageTransitionType.fade));
             }
           });
