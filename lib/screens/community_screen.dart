@@ -1,6 +1,7 @@
 import '../screens/login_screen.dart';
 import 'package:flutter/material.dart';
 import '../widgets/constants.dart' as constants;
+import 'login/signin_screen.dart';
 
 class CommunityScreen extends StatelessWidget {
   const CommunityScreen({Key? key}) : super(key: key);
@@ -38,7 +39,7 @@ class CommunityScreen extends StatelessWidget {
         body: Column(
           children: [
              const Text(constants.community),
-             ElevatedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: ((context) => const LoginScreen())));}, child: const Text('JOIN'))
+             ElevatedButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: ((context) => const SignInScreen())));}, child: const Text('JOIN'))
 
           ],
         )
