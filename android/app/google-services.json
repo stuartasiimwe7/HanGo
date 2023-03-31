@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "945022228310",
+    "project_id": "hango-6c2c9",
+    "storage_bucket": "hango-6c2c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:945022228310:android:e475e594132fe64bcd28f7",
+        "android_client_info": {
+          "package_name": "com.lacrose.hango"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "945022228310-mesj94ac3p20vbs10gl2o973eiuccq25.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvLbZRzX6J9B6I6Tl5dbqjLxVVTxxwOGg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "945022228310-mesj94ac3p20vbs10gl2o973eiuccq25.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
