@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:hango/screens/login/home_screen.dart';
 import 'package:hango/screens/login/signup_screen.dart';
 import 'package:hango/widgets/res_widgets.dart';
+import 'package:hango/widgets/firebase_helper.dart';
 
 class SignInScreen extends StatefulWidget {
   const SignInScreen({super.key});
@@ -12,8 +13,39 @@ class SignInScreen extends StatefulWidget {
 }
 
 class _SignInScreenState extends State<SignInScreen> {
+  String errorMessage = '';
+  bool isLogin = true;
   final TextEditingController _passwordTextController = TextEditingController();
   final TextEditingController _emailTextController = TextEditingController();
+
+  Future<void> signInWithEmailAndPassword() async {
+    try {
+      await Auth().signInWithEmailAndPassword(
+          email: _emailTextController.text,
+          password: _passwordTextController.text);
+    } on FirebaseAuthException catch (e) {
+      setState(() {
+        errorMessage = e.message!;
+      });
+    }
+  }
+
+  Future<void> createUserWithEmailAndPassword() async {
+    try {
+      await Auth().createUserWithEmailAndPassword(
+          email: _emailTextController.text,
+          password: _passwordTextController.text);
+    } on FirebaseAuthException catch (e) {
+      setState(() {
+        errorMessage = e.message!;
+      });
+    }
+  }
+
+  Widget _errorMessage() {
+    return Text(errorMessage == '' ? '' : 'Error ?$errorMessage');
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
