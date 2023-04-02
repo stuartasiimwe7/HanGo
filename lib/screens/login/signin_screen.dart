@@ -30,22 +30,6 @@ class _SignInScreenState extends State<SignInScreen> {
     }
   }
 
-  Future<void> createUserWithEmailAndPassword() async {
-    try {
-      await Auth().createUserWithEmailAndPassword(
-          email: _emailTextController.text,
-          password: _passwordTextController.text);
-    } on FirebaseAuthException catch (e) {
-      setState(() {
-        errorMessage = e.message!;
-      });
-    }
-  }
-
-  Widget _errorMessage() {
-    return Text(errorMessage == '' ? '' : 'Error ?$errorMessage');
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
