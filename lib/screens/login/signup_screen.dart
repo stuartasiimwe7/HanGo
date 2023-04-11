@@ -1,7 +1,5 @@
-// ignore_for_file: unused_import
 
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:hango/screens/home_screen.dart';
 import 'package:hango/widgets/res_widgets.dart';
@@ -78,3 +76,10 @@ class _SignUpScreenState extends State<SignUpScreen> {
     );
   }
 }
+FirebaseAuthMultiFactorExceptionPlatform parseMultiFactorError(
+<Map>String,Object? details){
+  final a = details['code'] as String?;
+  final b = details['message'] as String?;
+  final c = details['additionalData'] as String?;
+}
+
