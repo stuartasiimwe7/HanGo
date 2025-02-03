@@ -2,7 +2,7 @@
 
 This is a comprehensive and user-friendly cross-platform application built with Flutter that aims to assist you with preparing for the Korean Test of Proficiency. This app is designed to provide users with tips, must-knows, and 'how-tos' that can help them better understand the exam and improve their chances of success.
 
-It is available for Android, iOS, desktop, and the web, providing users with the flexibility to access it on their preferred device. With a sleek and modern user interface, ToPeak is easy to navigate, making it simple for users to access the information they need quickly.
+It is available for Android, iOS, desktop, and the web, providing users with the flexibility to access it on their preferred device. With a sleek and modern user interface, HanGo is easy to navigate, making it simple for users to access the information they need quickly.
 
 ## Getting Started
 
